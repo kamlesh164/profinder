@@ -1,0 +1,125 @@
+/* About Us Hero Section */
+.faq-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  background: #232728; /* fallback */
+  overflow: hidden;
+}
+
+.faq-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.faq-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 110px 0 90px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faq-title {
+  color: var(--primary-orange);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  font-family: var(--font-family-title);
+}
+
+.faq-breadcrumb {
+  color: #fff;
+  font-size: 23px;
+  margin-left: 5px;
+  margin-top: -12px;
+}
+
+.faq-hero-bg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgb(35 39 40 / 46%) 64%, rgba(35,39,40,.32) 100%), url('../images/banner4.png') right center/cover no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+  .faq-hero-content { padding: 60px 0 48px 18px; }
+  .faq-title { font-size: 38px; }
+  .faq-breadcrumb { font-size: 17px;}
+}
+@media (max-width:600px){
+  .faq-hero-section, .faq-hero-container { min-height: 230px; }
+  .faq-title { font-size: 29px; margin-bottom: 19px;}
+  .faq-hero-content { padding: 36px 0 18px 10px;}
+}
+
+.bg-faq {
+  background: #eaf4fd;
+}
+.card-header{
+  background-color: white;
+  border-bottom: 0;
+}
+.faq-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 28px rgba(30,60,140,0.08);
+  margin-bottom: 1.05rem;
+  transition: box-shadow 0.25s, transform 0.17s;
+}
+.faq-card:hover {
+  box-shadow: 0 8px 36px rgba(22,80,120,0.13), 0 0px 0px rgba(34,52,90,0.14);
+  transform: translateY(-2px) scale(1.012);
+}
+.faq-section-title {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+.faq-btn {
+  width: 100%;
+  color: #1a233a;
+  font-weight: 500;
+  font-size: 1.13rem;
+  border-radius: 16px;
+  padding: 0.6rem 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: background 0.13s;
+}
+.btn-link {
+  text-decoration: none !important;
+}
+.faq-toggle-icon {
+  font-size: 1.2em;
+  color: #aaa;
+  transition: color 0.18s;
+}
+.faq-btn[aria-expanded="true"] .faq-toggle-icon i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f068"; /* minus icon */
+}
+.faq-btn[aria-expanded="true"] .fa-plus:before {
+  content: "\f068"; /* fa-minus */
+}
+.faq-btn[aria-expanded="false"] .fa-plus:before {
+  content: "\f067"; /* fa-plus */
+}
+@media(max-width:900px){
+  .faq-section-title{font-size:1.14rem;}
+  .faq-card {margin-bottom: 0.80rem;}
+  .faq-btn { font-size: 1rem; padding: 0.89rem 0.7rem;}
+}

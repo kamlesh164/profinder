@@ -1,0 +1,107 @@
+/* About Us Hero Section */
+.contact-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  background: #232728; /* fallback */
+  overflow: hidden;
+}
+
+.contact-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 110px 0 90px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-title {
+  color: var(--primary-orange);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  font-family: var(--font-family-title);
+}
+
+.contact-breadcrumb {
+  color: #fff;
+  font-size: 23px;
+  margin-left: 5px;
+  margin-top: -12px;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgb(35 39 40 / 46%) 64%, rgba(35,39,40,.32) 100%), url('../images/banner4.png') right center/cover no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+  .contact-hero-content { padding: 60px 0 48px 18px; }
+  .contact-title { font-size: 38px; }
+  .contact-breadcrumb { font-size: 17px;}
+}
+@media (max-width:600px){
+  .contact-hero-section, .contact-hero-container { min-height: 230px; }
+  .contact-title { font-size: 29px; margin-bottom: 19px;}
+  .contact-hero-content { padding: 36px 0 18px 10px;}
+}
+
+.contact-bg-img-overlay {
+  min-height: 430px;
+  position: relative;
+  overflow: visible;
+}
+.contact-bg-img {
+  background: url('../images/service7.png') center center/cover no-repeat;
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+  filter: blur(0.5px) brightness(0.83); /* for soft effect */
+}
+.contact-info-overlay {
+  z-index: 2;
+  background: linear-gradient(112deg,rgba(18,22,33,0.81) 66%,rgba(18,18,18,0.01) 100%);
+  color: #fff;
+  border-radius: 0 0 0 38px;
+}
+.contact-info-block {
+  z-index: 2;
+  max-width: 99vw;
+}
+.map-embed {
+  min-height: 550px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width:991px){
+  .contact-map-section, .map-embed { min-height:210px; }
+  .contact-info-overlay {padding:2rem 1.5rem;}
+  .contact-bg-img-overlay {
+    min-height: 320px;
+  }
+}
+@media (max-width:767px){
+  .contact-info-overlay {border-radius:0;}
+  .contact-bg-img-overlay {
+    min-height: 590px;
+  }
+}
+

@@ -1,0 +1,181 @@
+/* About Us Hero Section */
+.subscription-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  background: #232728; /* fallback */
+  overflow: hidden;
+}
+
+.subscription-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.subscription-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 110px 0 90px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscription-title {
+  color: var(--primary-orange);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  font-family: var(--font-family-title);
+}
+
+.subscription-breadcrumb {
+  color: #fff;
+  font-size: 23px;
+  margin-left: 5px;
+  margin-top: -12px;
+}
+
+.subscription-hero-bg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgb(35 39 40 / 46%) 64%, rgba(35,39,40,.32) 100%), url('../images/banner6.png') right center/cover no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+  .subscription-hero-content { padding: 60px 0 48px 18px; }
+  .subscription-title { font-size: 38px; }
+  .subscription-breadcrumb { font-size: 17px;}
+}
+@media (max-width:600px){
+  .subscription-hero-section, .subscription-hero-container { min-height: 230px; }
+  .subscription-title { font-size: 29px; margin-bottom: 19px;}
+  .subscription-hero-content { padding: 36px 0 18px 10px;}
+}
+
+/* Bg image section Section */
+.bg-image-section-card {
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+}
+.bg-img-black-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgb(18 18 18 / 68%);
+  z-index: 1;
+  border-radius: 0.6rem;
+}
+.stat-svg-box {
+  width: 54px;
+  height: 54px;
+  background: var(--primary-orange) !important;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.7rem;
+  flex-shrink: 0;
+}
+.stat-overlay-item h5 {
+  font-size:1.03rem;
+  color:#fff;
+}
+.stat-desc {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.47;
+  display: block;
+}
+.bg-orange-500 {
+  background: var(--primary-orange) !important;
+}
+@media (max-width: 900px){
+  .bg-image-section-card { min-height: 190px; }
+  .stat-svg-box { width: 40px;height:40px;font-size:1.08rem;}
+  .stat-overlay-item h5 { font-size:0.89rem;}
+  .stat-desc { font-size:0.82rem;}
+}
+
+
+
+/* Plan table Section */
+.plan-table-section {
+  background: rgb(239 246 255);
+}
+.plan-table-section {
+  padding-bottom: 32px;
+}
+.table-primary {
+  background: #1782a6 !important;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.13rem;
+}
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+  background: #1782a6 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 1.13rem !important;
+}
+.table th {
+  background: #1782a6 !important;
+  color: #fff !important;
+  border-color: #1782a6 !important;
+}
+.table tbody tr, .table tbody td {
+  background: white !important;
+  color: #000 !important;
+}
+.table tr:nth-child(even) {
+  background: white !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-bg-type: white !important;
+}
+.fw-bold {
+  font-weight: 700 !important;
+  color: #233144 !important;
+}
+.text-orange {
+  color: #ff7a3d !important;
+}
+.text-success {
+  color: #22a85a !important;
+  font-weight: 500 !important;
+}
+.table, .table-bordered {
+  overflow: hidden;
+}
+.table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: none !important;
+}
+.table th, .table td {
+  border: none !important;
+  border-bottom: 1.5px solid #d3e6ef !important; /* soft blue, adjust as needed */
+  background: transparent;
+}
+.table tr:last-child td {
+  border-bottom: 2.2px solid #a1cfe9 !important; /* slightly bolder last line */
+}
+.table thead th {
+  border-bottom: 2.5px solid #1782a6 !important; /* strong header line */
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background: #f6fbff !important;
+}
+
+

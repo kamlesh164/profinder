@@ -1,0 +1,5 @@
+<svg width="60" height="60" viewBox="0 0 60 60" class="rounded-circle profile-widget-picture" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="30" cy="30" r="30" fill="#f0f4f8"/>
+                                    <circle cx="30" cy="24" r="12" fill="#c9d6e3"/>
+                                    <ellipse cx="30" cy="44" rx="16" ry="10" fill="#dde6ee"/>
+                                </svg>
